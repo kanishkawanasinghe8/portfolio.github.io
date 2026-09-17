@@ -1,0 +1,88 @@
+================================================================================
+   WELCOME TO YOUR MECHANICAL ENGINEERING PORTFOLIO WEBSITE!
+   Built specially for you with the modern VOXERA dark UI style.
+================================================================================
+
+YOU DO NOT NEED ANY CODING EXPERIENCE TO USE OR EDIT THIS WEBSITE!
+Follow these simple steps below:
+
+--------------------------------------------------------------------------------
+STEP 1: HOW TO OPEN & VIEW YOUR WEBSITE RIGHT NOW
+--------------------------------------------------------------------------------
+1. Open File Explorer on your computer and navigate to:
+   C:\Users\Oshan\.gemini\antigravity\scratch\mechanical-portfolio
+
+2. Find the file named:
+   index.html
+
+3. DOUBLE-CLICK IT!
+   It will instantly open in your favorite web browser (Google Chrome, Microsoft
+   Edge, Firefox, Brave, etc.).
+
+4. Click any link in the top bar (Projects, Publications, Experience,
+   Qualifications, Achievements) to navigate smoothly between pages!
+   Try clicking "View Specs & Analysis" on any project card to see the popup window,
+   or click "Copy Citation" on the Publications page.
+
+--------------------------------------------------------------------------------
+STEP 2: HOW TO CHANGE YOUR NAME, BIO & TEXT (SUPER EASY)
+--------------------------------------------------------------------------------
+Every file is written in plain English text. You do NOT need any special coding
+software—you can use "Notepad" that comes free with Windows!
+
+1. Right-click on "index.html" (or any page you want to edit).
+2. Click "Open with" -> choose "Notepad" (or VS Code if you have it).
+3. Look for the clearly marked labels:
+   For example, search for: OSHAN
+   You can change "OSHAN" to your full name!
+   You can change "oshan.engineering@gmail.com" to your real email address!
+4. Press Ctrl + S to save the file.
+5. Go back to your browser and press refresh (F5). Your new text will appear
+   instantly!
+
+--------------------------------------------------------------------------------
+STEP 3: HOW TO ADD YOUR OWN REAL PROJECT PHOTOS / CAD RENDERS
+--------------------------------------------------------------------------------
+Right now, the site includes realistic vector blueprints for your gearbox,
+stress analysis, robotics arm, airfoil, and suspension.
+
+When you have your own screenshots from SolidWorks, ANSYS, or lab photos:
+1. Save your image as a JPG or PNG file (e.g. "my-cad-project.png").
+2. Copy and paste your image into the "images" folder inside:
+   C:\Users\Oshan\.gemini\antigravity\scratch\mechanical-portfolio\images\
+3. Open "projects.html" in Notepad, find the project you want to change, and swap:
+   src="images/cad-gearbox.svg"
+   with:
+   src="images/my-cad-project.png"
+4. Save and refresh your browser!
+
+--------------------------------------------------------------------------------
+STEP 4: HOW TO PUT YOUR PORTFOLIO ONLINE FOR FREE (IN 60 SECONDS)
+--------------------------------------------------------------------------------
+When you are ready to share your portfolio with professors, companies, or friends:
+
+Option A: Drag-and-Drop on Netlify (Easiest - 1 Click):
+1. Go to: https://app.netlify.com/drop
+2. Drag your entire "mechanical-portfolio" folder into the box on the website.
+3. In 5 seconds, it will give you a live website link (e.g. your-name.netlify.app)
+   that anyone in the world can open on their phone or laptop!
+
+Option B: Free GitHub Pages:
+1. Create a free account on https://github.com
+2. Create a new repository named: username.github.io
+3. Upload the files and enable GitHub Pages in settings.
+
+--------------------------------------------------------------------------------
+SUMMARY OF PAGES IN YOUR WEBSITE:
+--------------------------------------------------------------------------------
+- index.html          -> Home Page: Profile, Bio, Key Metrics, Featured Work
+- projects.html       -> Complete Projects Catalog with Filter Tabs & Popup Modals
+- publications.html   -> Papers, Journals, Conferences, BibTeX Copy & Abstracts
+- experience.html     -> Vertical Timeline of Internships, Labs & Leadership
+- qualifications.html -> Degrees, Coursework, Certifications & Skills Matrix
+- achievements.html   -> Awards, Competition Wins & Comments / Recommendations
+- css/style.css       -> Dark theme, frosted glass ribbon, mint green buttons
+- js/main.js          -> Interactive menus, modals, filters & copy buttons
+
+Enjoy your new engineering portfolio!
+================================================================================

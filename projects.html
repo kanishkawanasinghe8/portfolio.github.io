@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering Projects | Mechanical Design, FEA & Robotics</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       TOP RIBBON NAVIGATION
+       ========================================================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      
+      <a href="about.html" class="nav-brand">
+        <div class="nav-brand-badge">ME</div>
+        <div class="nav-brand-text">
+          <span class="nav-brand-title">OSHAN</span>
+          <span class="nav-brand-sub">MECHANICAL ENGINEER</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="publications.html" class="nav-link">Publications</a></li>
+          <li><a href="experience.html" class="nav-link">Experience</a></li>
+          <li><a href="qualifications.html" class="nav-link">Qualifications</a></li>
+          <li><a href="achievements.html" class="nav-link">Achievements</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contactModal" class="btn btn-secondary btn-sm open-contact-btn">RESUME / CV</a>
+        <a href="#contactModal" class="btn btn-primary btn-sm open-contact-btn">
+          GET IN TOUCH <span class="btn-arrow">→</span>
+        </a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       PROJECTS CATALOG HEADER
+       ========================================================================== -->
+  <main class="section" style="padding-top: 130px;">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="pill-badge"><span class="badge-dot"></span>ENGINEERING REPOSITORY</div>
+        <h1 class="section-title">Technical Projects &amp; Prototypes</h1>
+        <p class="section-desc">
+          Exploration of precision CAD assemblies, non-linear FEA validations, aerodynamic CFD simulations, and automated mechatronic systems.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All Projects (6)</button>
+        <button class="filter-btn" data-filter="cad">Mechanical Design / CAD</button>
+        <button class="filter-btn" data-filter="fea">FEA &amp; Simulation</button>
+        <button class="filter-btn" data-filter="robotics">Robotics &amp; Mechatronics</button>
+        <button class="filter-btn" data-filter="thermal">Thermal &amp; Fluids</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="grid-3" id="projectsContainer">
+
+        <!-- PROJECT 1: Planetary Gearbox -->
+        <div class="card project-card cad" 
+             data-category="cad"
+             data-report="downloads/sample-gearbox-report.pdf"
+             data-cad="downloads/sample-gearbox-cad.step"
+             data-problem="Design an ultra-compact speed reducer capable of transmitting 180 N·m of peak torque within a confined cylindrical envelope (dia &lt; 140 mm) while minimizing backlash under dynamic shock loading."
+             data-solution="Modeled a 4.2:1 epicyclic gear train with 3 planet gears in SolidWorks. Applied AGMA gear tooth bending and surface pitting stress calculations. Generated production drawings with ASME Y14.5 GD&amp;T standards."
+             data-results="Reduced gear assembly volume by 34% compared to traditional parallel-shaft designs. Finite element contact stress analysis confirmed gear tooth safety factor &gt; 1.85 at maximum stall torque.">
+          <div class="project-img-wrapper">
+            <img src="images/cad-gearbox.svg" alt="Epicyclic Planetary Gearbox">
+            <span class="project-category-badge">CAD / Mechanical</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Epicyclic Planetary Gearbox</h3>
+            <p class="project-desc">
+              High-torque density planetary gear reducer with optimized tooth mesh geometry, carrier plate deflection analysis, and ISO H7/p6 press fits.
+            </p>
+            <div class="project-tags" style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px;">
+              <span class="tag-chip accent">SolidWorks</span>
+              <span class="tag-chip">AGMA Standards</span>
+              <span class="tag-chip">GD&amp;T</span>
+              <span class="tag-chip">CNC DFM</span>
+            </div>
+            <div class="project-meta">
+              <button class="btn btn-outline btn-sm view-project-btn">View Specs &amp; Analysis →</button>
+              <span style="font-size: 0.78rem; color: var(--accent-mint); font-family: var(--font-mono);">SF = 1.85</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: FEA Structural Bracket -->
+        <div class="card project-card fea" 
+             data-category="fea"
+             data-report="downloads/sample-gearbox-report.pdf"
+             data-cad="downloads/sample-gearbox-cad.step"
+             data-problem="A critical suspension bracket on an experimental chassis experienced premature fatigue failure under cyclic cornering loads of 12.5 kN."
+             data-solution="Conducted non-linear finite element structural stress analysis using ANSYS Mechanical. Applied topology optimization algorithms to strategically redistribute material away from low-strain zones to critical fillet radii."
+             data-results="Eliminated dangerous stress hotspots, cutting maximum von Mises stress from 415 MPa down to 312 MPa (below yield for Al 7075-T6). Reduced overall bracket mass by 28%.">
+          <div class="project-img-wrapper">
+            <img src="images/fea-stress.svg" alt="FEA Structural Bracket">
+            <span class="project-category-badge">FEA / Structural</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Structural Topology Optimization</h3>
+            <p class="project-desc">
+              Nonlinear finite element stress and fatigue life analysis on an aerospace grade aluminum suspension bracket undergoing multi-axial shock loads.
+            </p>
+            <div class="project-tags" style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px;">
+              <span class="tag-chip accent">ANSYS FEA</span>
+              <span class="tag-chip">Topology Opt</span>
+              <span class="tag-chip">Fatigue Life</span>
+              <span class="tag-chip">Al 7075-T6</span>
+            </div>
+            <div class="project-meta">
+              <button class="btn btn-outline btn-sm view-project-btn">View Specs &amp; Analysis →</button>
+              <span style="font-size: 0.78rem; color: var(--accent-mint); font-family: var(--font-mono);">-28% Mass</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: Robotics Arm -->
+        <div class="card project-card robotics" 
+             data-category="robotics"
+             data-report="downloads/sample-gearbox-report.pdf"
+             data-cad="downloads/sample-gearbox-cad.step"
+             data-problem="Develop a low-cost, 6-degree-of-freedom robotic manipulator for automated laboratory sample handling requiring sub-millimeter positioning accuracy."
+             data-solution="Engineered lightweight carbon-fiber and CNC aluminum links. Integrated brushless DC motors with zero-backlash harmonic drives. Solved numerical inverse kinematics and trajectory planning via ROS2 and MATLAB Simulink."
+             data-results="Achieved repeatable end-effector positioning error under 0.05 mm across a 750 mm spherical workspace with a maximum payload capacity of 2.5 kg.">
+          <div class="project-img-wrapper">
+            <img src="images/robotics-arm.svg" alt="6-DOF Robotic Arm">
+            <span class="project-category-badge">Robotics &amp; Mechatronics</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">6-DOF Robotic Manipulator</h3>
+            <p class="project-desc">
+              Articulated robotic arm integrating harmonic drive gearheads, brushless servo actuators, custom parallel gripper, and inverse kinematics in ROS2.
+            </p>
+            <div class="project-tags" style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px;">
+              <span class="tag-chip accent">ROS2</span>
+              <span class="tag-chip">Kinematics</span>
+              <span class="tag-chip">MATLAB</span>
+              <span class="tag-chip">Harmonic Drive</span>
+            </div>
+            <div class="project-meta">
+              <button class="btn btn-outline btn-sm view-project-btn">View Specs &amp; Analysis →</button>
+              <span style="font-size: 0.78rem; color: var(--accent-mint); font-family: var(--font-mono);">&lt;0.05 mm Err</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 4: Aerodynamic Airfoil CFD -->
+        <div class="card project-card thermal" 
+             data-category="thermal"
+             data-report="downloads/sample-gearbox-report.pdf"
+             data-cad="downloads/sample-gearbox-cad.step"
+             data-problem="Analyze boundary layer flow separation and aerodynamic drag divergence over a modified NACA 0012 airfoil in transonic flight conditions."
+             data-solution="Generated an O-grid computational mesh of 3.4 million polyhedral cells with y+ &lt; 1 for near-wall boundary layer resolution. Ran compressible Navier-Stokes simulations in ANSYS Fluent utilizing the k-ω SST turbulence model."
+             data-results="Successfully captured shock wave boundary layer interaction (SWBLI). Designed passive trailing edge vortex generators that delayed flow separation by 4° angle of attack, boosting L/D ratio to 18.4.">
+          <div class="project-img-wrapper">
+            <img src="images/cfd-aerofoil.svg" alt="CFD Airfoil Aerodynamics">
+            <span class="project-category-badge">Thermal &amp; Fluids / CFD</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Transonic Airfoil Aerodynamics</h3>
+            <p class="project-desc">
+              High-resolution CFD simulation of compressible airflow, shock wave formation, and turbulent boundary layer separation on an aerodynamic lifting surface.
+            </p>
+            <div class="project-tags" style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px;">
+              <span class="tag-chip accent">ANSYS Fluent</span>
+              <span class="tag-chip">CFD</span>
+              <span class="tag-chip">k-ω SST</span>
+              <span class="tag-chip">Compressible Flow</span>
+            </div>
+            <div class="project-meta">
+              <button class="btn btn-outline btn-sm view-project-btn">View Specs &amp; Analysis →</button>
+              <span style="font-size: 0.78rem; color: var(--accent-mint); font-family: var(--font-mono);">L/D = 18.4</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 5: Microchannel Heat Exchanger -->
+        <div class="card project-card thermal" 
+             data-category="thermal"
+             data-report="downloads/sample-gearbox-report.pdf"
+             data-cad="downloads/sample-gearbox-cad.step"
+             data-problem="High heat-flux electronic components in an electric powertrain inverter generated excessive thermal throttling (&gt;95°C) within tightly constrained packaging."
+             data-solution="Designed a counter-flow microchannel heat exchanger with 0.4 mm fin thickness optimized for selective laser melting (SLM) metal 3D printing in AlSi10Mg. Conducted conjugate heat transfer (CHT) simulations."
+             data-results="Delivered 4.8 kW of heat dissipation while maintaining component junction temperatures below 68°C, with a pressure drop of under 12.5 kPa across the manifold.">
+          <div class="project-img-wrapper">
+            <img src="images/thermal-exchanger.svg" alt="Microchannel Heat Exchanger">
+            <span class="project-category-badge">Thermal &amp; Fluids</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Additive Microchannel Exchanger</h3>
+            <p class="project-desc">
+              Conjugate heat transfer modeling and DfAM (Design for Additive Manufacturing) of a high-efficiency liquid cooling cold plate for power electronics.
+            </p>
+            <div class="project-tags" style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px;">
+              <span class="tag-chip accent">Thermal CHT</span>
+              <span class="tag-chip">Metal 3D Printing</span>
+              <span class="tag-chip">Electronics Cooling</span>
+            </div>
+            <div class="project-meta">
+              <button class="btn btn-outline btn-sm view-project-btn">View Specs &amp; Analysis →</button>
+              <span style="font-size: 0.78rem; color: var(--accent-mint); font-family: var(--font-mono);">4.8 kW Diss.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 6: Formula Student Suspension -->
+        <div class="card project-card cad" 
+             data-category="cad"
+             data-report="downloads/sample-gearbox-report.pdf"
+             data-cad="downloads/sample-gearbox-cad.step"
+             data-problem="Design an independent double-wishbone suspension geometry maximizing tire contact patch grip during high-speed transient cornering in Formula Student."
+             data-solution="Programmed kinematic roll-center and camber-gain optimization scripts in MATLAB. Designed 4130 chromoly steel wishbones and CNC-machined 7075-T6 aluminum uprights with integrated wheel hub assemblies."
+             data-results="Maintained tire camber within -2.2° ± 0.3° throughout full bump and rebound travel, increasing lateral cornering grip by 0.18g on skidpad tests. Reduced unsprung mass by 1.2 kg per corner.">
+          <div class="project-img-wrapper">
+            <img src="images/suspension-system.svg" alt="Suspension System Kinematics">
+            <span class="project-category-badge">Chassis &amp; Dynamics</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Formula Suspension Kinematics</h3>
+            <p class="project-desc">
+              Full kinematic design, roll center optimization, and upright component machining for a lightweight open-wheel racing car chassis.
+            </p>
+            <div class="project-tags" style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px;">
+              <span class="tag-chip accent">Kinematics</span>
+              <span class="tag-chip">Vehicle Dynamics</span>
+              <span class="tag-chip">CNC Machining</span>
+            </div>
+            <div class="project-meta">
+              <button class="btn btn-outline btn-sm view-project-btn">View Specs &amp; Analysis →</button>
+              <span style="font-size: 0.78rem; color: var(--accent-mint); font-family: var(--font-mono);">+0.18g Grip</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       PROJECT DETAILS MODAL (POPUP ON CLICK)
+       ========================================================================== -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <div class="modal-body-content">
+        <!-- Dynamically injected by main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       CONTACT MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="contactModal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <div class="pill-badge"><span class="badge-dot"></span>GET IN TOUCH</div>
+      <h2 style="font-size: 1.8rem; margin-bottom: 8px; color: #fff;">Let's Discuss Engineering</h2>
+      <p style="color: var(--text-secondary); margin-bottom: 24px; font-size: 0.95rem;">
+        Reach out for CAD modeling inquiries, FEA consulting, research collaborations, or full-time opportunities.
+      </p>
+      <form id="contactForm" style="display: flex; flex-direction: column; gap: 16px;">
+        <input type="text" required placeholder="Your Name" style="width: 100%; padding: 12px 16px; background: rgba(255,255,255,0.04); border: 1px solid var(--border-medium); border-radius: 6px; color: #fff; font-family: inherit;">
+        <input type="email" required placeholder="Your Email Address" style="width: 100%; padding: 12px 16px; background: rgba(255,255,255,0.04); border: 1px solid var(--border-medium); border-radius: 6px; color: #fff; font-family: inherit;">
+        <textarea rows="4" required placeholder="Your Project or Role Details..." style="width: 100%; padding: 12px 16px; background: rgba(255,255,255,0.04); border: 1px solid var(--border-medium); border-radius: 6px; color: #fff; font-family: inherit; resize: vertical;"></textarea>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+          <button type="button" class="btn btn-outline copy-email-btn" data-email="oshan.engineering@gmail.com">Copy Email 📋</button>
+          <button type="submit" class="btn btn-primary">SEND MESSAGE →</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 Oshan. Mechanical Engineering Projects Catalog.</div>
+        <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-mint);">ALL CAD &amp; SIMULATION DATA VERIFIED</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="feaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090a0f" />
+      <stop offset="100%" stop-color="#111522" />
+    </linearGradient>
+    <!-- FEA Spectrum Gradient -->
+    <linearGradient id="feaSpectrum" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="25%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#10b981" />
+      <stop offset="75%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#feaBg)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
+    <path d="M0 100 H800 M0 200 H800 M0 300 H800 M0 400 H800"/>
+    <path d="M100 0 V500 M200 0 V500 M300 0 V500 M400 0 V500 M500 0 V500 M600 0 V500 M700 0 V500"/>
+  </g>
+
+  <!-- Structural Bracket Body with Stress Heatmap -->
+  <g transform="translate(180, 80)">
+    <!-- Main L-bracket shell -->
+    <path d="M 60 40 L 320 40 Q 360 40 380 70 L 410 160 Q 420 190 390 220 L 260 260 Q 240 270 200 270 L 60 270 Q 30 270 30 240 L 30 70 Q 30 40 60 40 Z" 
+          fill="url(#feaSpectrum)" opacity="0.88" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+
+    <!-- Cutout / Weight Reduction Pocket with high stress concentration -->
+    <path d="M 120 100 L 240 100 Q 260 100 270 120 L 290 170 Q 300 190 280 200 L 140 210 Q 120 210 110 190 L 100 130 Q 95 100 120 100 Z" 
+          fill="#0c0e14" stroke="#ef4444" stroke-width="2.5"/>
+
+    <!-- FEA Mesh Lines (Tetrahedral / Triangular mesh representation) -->
+    <g stroke="rgba(255,255,255,0.25)" stroke-width="1" fill="none">
+      <polygon points="60,40 120,40 90,80"/>
+      <polygon points="120,40 180,40 150,80"/>
+      <polygon points="180,40 250,40 220,80"/>
+      <polygon points="250,40 320,40 280,80"/>
+      <polygon points="320,40 380,70 340,110"/>
+      <polygon points="380,70 410,160 360,140"/>
+      <polygon points="410,160 390,220 350,190"/>
+      <polygon points="390,220 260,260 290,210"/>
+      <polygon points="260,260 200,270 180,220"/>
+      <polygon points="200,270 60,270 100,220"/>
+      <polygon points="60,270 30,240 50,180"/>
+      <polygon points="30,240 30,70 50,120"/>
+    </g>
+
+    <!-- Bolted Anchor Holes -->
+    <circle cx="70" cy="90" r="18" fill="#090a0f" stroke="#38bdf8" stroke-width="2"/>
+    <circle cx="70" cy="220" r="18" fill="#090a0f" stroke="#38bdf8" stroke-width="2"/>
+    
+    <!-- Load Applied Arrow Point (Red Arrow) -->
+    <g transform="translate(390, 140)" fill="#ef4444" stroke="#ef4444">
+      <line x1="0" y1="0" x2="80" y2="0" stroke-width="3"/>
+      <polygon points="0,0 15,-6 15,6"/>
+      <text x="90" y="5" font-family="monospace" font-size="12" fill="#ef4444" font-weight="bold">F = 12.5 kN (DYNAMIC)</text>
+    </g>
+
+    <!-- Critical Hotspot Marker -->
+    <circle cx="275" cy="185" r="8" fill="none" stroke="#ff0055" stroke-width="2">
+      <animate attributeName="r" values="6;14;6" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M 275 185 L 230 140 L 160 140" stroke="#ff0055" stroke-width="1.5" fill="none"/>
+    <text x="150" y="135" font-family="monospace" font-size="11" fill="#ff0055" text-anchor="end" font-weight="bold">MAX VON MISES: 312.4 MPa</text>
+    <text x="150" y="150" font-family="monospace" font-size="10" fill="#94a3b8" text-anchor="end">YIELD: 440 MPa (SF = 1.41)</text>
+  </g>
+
+  <!-- FEA Color Legend Bar (Left) -->
+  <g transform="translate(40, 100)">
+    <text x="0" y="-12" font-family="monospace" font-size="11" fill="#94a3b8">STRESS [MPa]</text>
+    <rect x="0" y="0" width="16" height="260" fill="url(#feaSpectrum)" rx="3" transform="rotate(180 8 130)"/>
+    <text x="24" y="10" font-family="monospace" font-size="10" fill="#ef4444">312.4 (Max)</text>
+    <text x="24" y="70" font-family="monospace" font-size="10" fill="#f59e0b">234.3</text>
+    <text x="24" y="135" font-family="monospace" font-size="10" fill="#10b981">156.2</text>
+    <text x="24" y="200" font-family="monospace" font-size="10" fill="#06b6d4">78.1</text>
+    <text x="24" y="260" font-family="monospace" font-size="10" fill="#2563eb">0.0 (Min)</text>
+  </g>
+
+  <!-- Title / Simulation Specs Footer -->
+  <text x="40" y="450" font-family="monospace" font-size="11" fill="rgba(255,255,255,0.4)">ANSYS MECHANICAL 2026 // NONLINEAR STATIC STRUCTURAL ANALYSIS // AL 7075-T6</text>
+  <text x="760" y="450" font-family="monospace" font-size="11" fill="#7ef3c4" text-anchor="end">CONVERGENCE: 0.002% RESIDUAL</text>
+</svg>

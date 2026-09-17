@@ -1,0 +1,13 @@
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION(('Epicyclic Planetary Gearbox Assembly - 3D CAD STEP Exchange File'),'2;1');
+FILE_NAME('sample-gearbox-cad.step','2026-09-15T22:00:00',('Oshan'),('Mechanical Engineering'),'SolidWorks 2026','SolidWorks','Approved');
+FILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));
+ENDSEC;
+DATA;
+#10=ORGANIZATION('ENG-ME','Mechanical Engineering Research','Precision Design');
+#20=APPLICATION_CONTEXT('automotive_design');
+#30=APPLICATION_PROTOCOL_DEFINITION('international standard','automotive_design',2000,#20);
+#40=PRODUCT('GEARBOX_EPICYCLIC','Epicyclic Planetary Gearbox Assembly','Planetary reducer module m=2.5mm',(#20));
+ENDSEC;
+END-ISO-10303-21;

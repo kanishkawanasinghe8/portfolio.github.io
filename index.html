@@ -1,0 +1,460 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mechanical Engineer Portfolio | CAD, FEA & Robotics</title>
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Favicon icon placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       TOP RIBBON NAVIGATION (PERSISTENT FROSTED GLASS BAR)
+       ========================================================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo / Monogram -->
+      <!-- EDIT YOUR INITIALS OR NAME HERE -->
+      <a href="about.html" class="nav-brand">
+        <div class="nav-brand-badge">ME</div>
+        <div class="nav-brand-text">
+          <span class="nav-brand-title">OSHAN</span>
+          <span class="nav-brand-sub">MECHANICAL ENGINEER</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="publications.html" class="nav-link">Publications</a></li>
+          <li><a href="experience.html" class="nav-link">Experience</a></li>
+          <li><a href="qualifications.html" class="nav-link">Qualifications</a></li>
+          <li><a href="achievements.html" class="nav-link">Achievements</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <!-- EDIT WITH YOUR RESUME LINK (e.g. resume.pdf) -->
+        <a href="#contactModal" class="btn btn-secondary btn-sm open-contact-btn">RESUME / CV</a>
+        <!-- Mint Accent CTA matching VOXERA UI -->
+        <a href="#contactModal" class="btn btn-primary btn-sm open-contact-btn">
+          GET IN TOUCH <span class="btn-arrow">→</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="nav-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION (INSPIRED BY VOXERA MODERN DARK UI)
+       ========================================================================== -->
+  <main>
+    <section class="hero">
+      <canvas id="heroCanvas" class="hero-canvas"></canvas>
+      <div class="container hero-content">
+        
+        <!-- Status Pill Badge -->
+        <div class="pill-badge">
+          <span class="badge-dot"></span>
+          <!-- EDIT YOUR SPECIALTY TAG HERE -->
+          MECHANICAL ENGINEERING &amp; PRODUCT DESIGN
+        </div>
+
+        <!-- Main Headline -->
+        <!-- EDIT YOUR MAIN HEADLINE HERE -->
+        <h1 class="hero-title">
+          Engineering precision, robust mechanics &amp; scalable innovation
+        </h1>
+
+        <!-- Subtitle / Bio -->
+        <!-- EDIT YOUR BRIEF BIO / INTRODUCTION HERE -->
+        <p class="hero-subtitle">
+          Specializing in 3D parametric CAD modeling, finite element analysis (FEA), computational fluid dynamics (CFD), and automated robotic systems. Turning complex mechanical challenges into high-performance, manufacturing-ready solutions.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-primary">
+            EXPLORE PROJECTS <span class="btn-arrow">→</span>
+          </a>
+          <a href="qualifications.html" class="btn btn-secondary">
+            ACADEMIC QUALIFICATIONS
+          </a>
+          <button class="btn btn-outline copy-email-btn" data-email="oshan.engineering@gmail.com">
+            COPY EMAIL 📋
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         KEY STATS & HIGHLIGHTS BAR
+         ========================================================================== -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          
+          <div class="stat-card">
+            <!-- EDIT NUMBER & LABEL -->
+            <div class="stat-number">12+</div>
+            <div class="stat-label">Engineering Projects</div>
+          </div>
+
+          <div class="stat-card">
+            <!-- EDIT NUMBER & LABEL -->
+            <div class="stat-number">03</div>
+            <div class="stat-label">Peer-Reviewed Papers</div>
+          </div>
+
+          <div class="stat-card">
+            <!-- EDIT NUMBER & LABEL -->
+            <div class="stat-number">3.9+</div>
+            <div class="stat-label">Academic GPA / Honors</div>
+          </div>
+
+          <div class="stat-card">
+            <!-- EDIT NUMBER & LABEL -->
+            <div class="stat-number">CSWP</div>
+            <div class="stat-label">Certified SolidWorks Pro</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT ME & PERSONAL INFORMATION
+         ========================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="pill-badge"><span class="badge-dot"></span>BIOGRAPHY &amp; PROFILE</div>
+          <h2 class="section-title">Bridging Physics, Simulation &amp; Physical Prototyping</h2>
+          <p class="section-desc">
+            A comprehensive overview of my technical philosophy, mechanical engineering discipline, and engineering passions.
+          </p>
+        </div>
+
+        <div class="grid-2" style="align-items: center;">
+          
+          <!-- Personal Bio Card -->
+          <div class="card" style="padding: 36px;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 16px; color: #fff;">Hello, I'm Oshan</h3>
+            <p style="margin-bottom: 16px; font-size: 0.98rem; line-height: 1.7;">
+              I am a dedicated <strong>Mechanical Engineering</strong> practitioner with a profound passion for design optimization, kinematics, and thermo-fluid mechanics. My academic journey and hands-on projects have centered on solving multidisciplinary engineering challenges through analytical modeling, rigorous simulation, and experimental testing.
+            </p>
+            <p style="margin-bottom: 24px; font-size: 0.98rem; line-height: 1.7;">
+              Whether conducting non-linear structural stress simulations in ANSYS, generating complex parametric assemblies in SolidWorks, or programming embedded microcontrollers for robotic end-effectors, I thrive on delivering reliable, cost-effective, and safe mechanical designs.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 12px; margin-top: auto; border-top: 1px solid var(--border-subtle); padding-top: 20px;">
+              <div style="display: flex; justify-content: space-between; font-size: 0.9rem;">
+                <span style="color: var(--text-muted);">Discipline:</span>
+                <span style="color: var(--accent-mint); font-family: var(--font-mono);">B.Sc. Mechanical Engineering</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.9rem;">
+                <span style="color: var(--text-muted);">Core Focus:</span>
+                <span style="color: #fff;">CAD Design, FEA, CFD &amp; Robotics</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.9rem;">
+                <span style="color: var(--text-muted);">Availability:</span>
+                <span style="color: var(--accent-mint); font-family: var(--font-mono);">Open for Research &amp; Engineering Roles</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Highlights / Core Disciplines -->
+          <div style="display: flex; flex-direction: column; gap: 20px;">
+            
+            <div class="card" style="padding: 24px;">
+              <div style="display: flex; gap: 18px; align-items: flex-start;">
+                <div class="specialty-icon" style="margin-bottom: 0;">⚙️</div>
+                <div>
+                  <h4 style="font-size: 1.15rem; margin-bottom: 6px;">Mechanical CAD &amp; DFM</h4>
+                  <p style="font-size: 0.88rem; color: var(--text-secondary);">
+                    Expertise in parametric 3D modeling, GD&amp;T (ASME Y14.5), Design for Manufacturing &amp; Assembly (DFM/DFA), and sheet metal design.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="padding: 24px;">
+              <div style="display: flex; gap: 18px; align-items: flex-start;">
+                <div class="specialty-icon" style="margin-bottom: 0;">🔬</div>
+                <div>
+                  <h4 style="font-size: 1.15rem; margin-bottom: 6px;">FEA Structural &amp; CFD Analysis</h4>
+                  <p style="font-size: 0.88rem; color: var(--text-secondary);">
+                    Linear and non-linear stress analysis, vibrational harmonics, fatigue life estimation, and fluid aerodynamics using ANSYS &amp; Abaqus.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="padding: 24px;">
+              <div style="display: flex; gap: 18px; align-items: flex-start;">
+                <div class="specialty-icon" style="margin-bottom: 0;">🤖</div>
+                <div>
+                  <h4 style="font-size: 1.15rem; margin-bottom: 6px;">Robotics &amp; Mechatronics</h4>
+                  <p style="font-size: 0.88rem; color: var(--text-secondary);">
+                    Forward/inverse kinematics, sensor integration, actuator selection, MATLAB/Simulink control loops, and automated prototyping.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FEATURED PROJECTS PREVIEW
+         ========================================================================== -->
+    <section class="section" style="background: rgba(13, 15, 21, 0.5);">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="pill-badge"><span class="badge-dot"></span>PORTFOLIO SPOTLIGHT</div>
+          <h2 class="section-title">Featured Engineering Projects</h2>
+          <p class="section-desc">
+            A sample of high-impact design and simulation engineering endeavors.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          
+          <!-- Featured Project 1 -->
+          <div class="card project-card" data-category="cad">
+            <div class="project-img-wrapper">
+              <img src="images/cad-gearbox.svg" alt="Epicyclic Planetary Gearbox CAD Model">
+              <span class="project-category-badge">CAD / Mechanical Design</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Epicyclic Planetary Gearbox</h3>
+              <p class="project-desc">
+                Designed a compact 4.2:1 ratio epicyclic gear reducer with optimized tooth contact stress and ISO H7/p6 precision tolerances.
+              </p>
+              <div class="project-tags" style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px;">
+                <span class="tag-chip accent">SolidWorks</span>
+                <span class="tag-chip">Gear Kinematics</span>
+                <span class="tag-chip">GD&amp;T</span>
+              </div>
+              <div class="project-meta">
+                <a href="projects.html" class="btn btn-outline btn-sm">Learn More →</a>
+                <span style="font-size: 0.78rem; color: var(--text-muted); font-family: var(--font-mono);">180 N·m Rating</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured Project 2 -->
+          <div class="card project-card" data-category="fea">
+            <div class="project-img-wrapper">
+              <img src="images/fea-stress.svg" alt="Aerospace Suspension Bracket FEA">
+              <span class="project-category-badge">FEA / Structural</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Structural Bracket Optimization</h3>
+              <p class="project-desc">
+                Performed topological weight optimization and non-linear von Mises stress validation on an Al 7075-T6 aircraft suspension bracket.
+              </p>
+              <div class="project-tags" style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px;">
+                <span class="tag-chip accent">ANSYS FEA</span>
+                <span class="tag-chip">Topology Opt</span>
+                <span class="tag-chip">Fatigue Life</span>
+              </div>
+              <div class="project-meta">
+                <a href="projects.html" class="btn btn-outline btn-sm">Learn More →</a>
+                <span style="font-size: 0.78rem; color: var(--text-muted); font-family: var(--font-mono);">-28% Weight</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured Project 3 -->
+          <div class="card project-card" data-category="robotics">
+            <div class="project-img-wrapper">
+              <img src="images/robotics-arm.svg" alt="6-DOF Robotic Manipulator Arm">
+              <span class="project-category-badge">Robotics &amp; Mechatronics</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">6-DOF Robotic Manipulator</h3>
+              <p class="project-desc">
+                Engineered joint articulation mechanisms, harmonic drive integration, and closed-loop inverse kinematics control in ROS2 &amp; MATLAB.
+              </p>
+              <div class="project-tags" style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px;">
+                <span class="tag-chip accent">ROS2</span>
+                <span class="tag-chip">MATLAB</span>
+                <span class="tag-chip">Kinematics</span>
+              </div>
+              <div class="project-meta">
+                <a href="projects.html" class="btn btn-outline btn-sm">Learn More →</a>
+                <span style="font-size: 0.78rem; color: var(--text-muted); font-family: var(--font-mono);">&lt;0.05 mm Error</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 48px;">
+          <a href="projects.html" class="btn btn-primary">
+            VIEW ALL PROJECTS &amp; MODALS <span class="btn-arrow">→</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TESTIMONIALS / RECOMMENDATIONS ("COMMENTS") PREVIEW
+         ========================================================================== -->
+    <section class="section">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="pill-badge"><span class="badge-dot"></span>ENDORSEMENTS &amp; COMMENTS</div>
+          <h2 class="section-title">Academic &amp; Professional Feedback</h2>
+          <p class="section-desc">
+            What research supervisors, engineering mentors, and project teammates say about my work.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          
+          <div class="card testimonial-card">
+            <p class="testimonial-quote">
+              "Oshan demonstrated exceptional proficiency in CAD design and finite element simulation during our lab's vehicle dynamics project. His methodical approach to tolerance analysis and weight reduction was instrumental in our design review success."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">DR</div>
+              <div>
+                <div class="testimonial-name">Dr. Richard Vance, Ph.D., PE</div>
+                <div class="testimonial-role">Professor of Mechanical Engineering &amp; Lab Director</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card testimonial-card">
+            <p class="testimonial-quote">
+              "An engineer with rare clarity in both theoretical thermodynamics and physical manufacturing. Oshan delivered our custom thermal test fixture ahead of schedule and with impeccable documentation."
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">SM</div>
+              <div>
+                <div class="testimonial-name">Sarah Mitchell</div>
+                <div class="testimonial-role">Senior Lead Mechanical Engineer, AeroTech Systems</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 36px;">
+          <a href="achievements.html" class="btn btn-secondary">
+            SEE ALL ACHIEVEMENTS &amp; RECOMMENDATIONS →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        <div>
+          <div class="nav-brand" style="margin-bottom: 12px;">
+            <div class="nav-brand-badge">ME</div>
+            <span class="nav-brand-title">OSHAN // PORTFOLIO</span>
+          </div>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); max-width: 440px;">
+            Mechanical Engineer passionate about precision CAD, FEA stress analysis, fluid dynamics, and robotics hardware innovation.
+          </p>
+        </div>
+
+        <div class="social-links">
+          <!-- EDIT WITH YOUR PROFILES -->
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-btn" title="LinkedIn">in</a>
+          <a href="https://github.com" target="_blank" rel="noopener" class="social-btn" title="GitHub">gh</a>
+          <a href="https://scholar.google.com" target="_blank" rel="noopener" class="social-btn" title="Google Scholar">🎓</a>
+          <a href="mailto:oshan.engineering@gmail.com" class="social-btn" title="Email">✉</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Oshan. All rights reserved. Mechanical Engineering Portfolio.</div>
+        <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-mint);">
+          STATUS: OPEN FOR NEW OPPORTUNITIES
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       CONTACT / GET IN TOUCH MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="contactModal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      
+      <div class="pill-badge"><span class="badge-dot"></span>DIRECT TRANSMISSION</div>
+      <h2 style="font-size: 1.8rem; margin-bottom: 8px; color: #fff;">Let's Connect</h2>
+      <p style="color: var(--text-secondary); margin-bottom: 24px; font-size: 0.95rem;">
+        Have an engineering project, research inquiry, or career opportunity? Send a message or reach out directly.
+      </p>
+
+      <form id="contactForm" style="display: flex; flex-direction: column; gap: 16px;">
+        <div>
+          <label style="display: block; font-size: 0.82rem; font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 6px; text-transform: uppercase;">Your Name</label>
+          <input type="text" required placeholder="Dr. John Doe / Recruiter Name" style="width: 100%; padding: 12px 16px; background: rgba(255,255,255,0.04); border: 1px solid var(--border-medium); border-radius: 6px; color: #fff; font-family: inherit;">
+        </div>
+
+        <div>
+          <label style="display: block; font-size: 0.82rem; font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 6px; text-transform: uppercase;">Your Email</label>
+          <input type="email" required placeholder="name@company.com" style="width: 100%; padding: 12px 16px; background: rgba(255,255,255,0.04); border: 1px solid var(--border-medium); border-radius: 6px; color: #fff; font-family: inherit;">
+        </div>
+
+        <div>
+          <label style="display: block; font-size: 0.82rem; font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 6px; text-transform: uppercase;">Message / Opportunity Details</label>
+          <textarea rows="4" required placeholder="Describe the mechanical engineering project, role, or collaboration..." style="width: 100%; padding: 12px 16px; background: rgba(255,255,255,0.04); border: 1px solid var(--border-medium); border-radius: 6px; color: #fff; font-family: inherit; resize: vertical;"></textarea>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+          <button type="button" class="btn btn-outline copy-email-btn" data-email="oshan.engineering@gmail.com">
+            Copy My Direct Email 📋
+          </button>
+          <button type="submit" class="btn btn-primary">
+            SEND MESSAGE →
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
+

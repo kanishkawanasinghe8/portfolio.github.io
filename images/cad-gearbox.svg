@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0e14" />
+      <stop offset="100%" stop-color="#141926" />
+    </linearGradient>
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#7ef3c4" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.8"/>
+    </linearGradient>
+    <radialGradient id="hubGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7ef3c4" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#7ef3c4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background Grid -->
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+  <g stroke="rgba(255,255,255,0.04)" stroke-width="1">
+    <path d="M0 50 H800 M0 100 H800 M0 150 H800 M0 200 H800 M0 250 H800 M0 300 H800 M0 350 H800 M0 400 H800 M0 450 H800"/>
+    <path d="M50 0 V500 M100 0 V500 M150 0 V500 M200 0 V500 M250 0 V500 M300 0 V500 M350 0 V500 M400 0 V500 M450 0 V500 M500 0 V500 M550 0 V500 M600 0 V500 M650 0 V500 M700 0 V500 M750 0 V500"/>
+  </g>
+
+  <!-- Glow behind gearbox -->
+  <circle cx="400" cy="250" r="180" fill="url(#hubGlow)"/>
+
+  <!-- Outer Ring Gear -->
+  <circle cx="400" cy="250" r="160" fill="none" stroke="rgba(126, 243, 196, 0.4)" stroke-width="3" stroke-dasharray="8 4"/>
+  <circle cx="400" cy="250" r="145" fill="none" stroke="rgba(255, 255, 255, 0.15)" stroke-width="2"/>
+  <circle cx="400" cy="250" r="125" fill="none" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1.5"/>
+
+  <!-- Planetary Gears (3 planets) -->
+  <!-- Planet 1 (Top) -->
+  <g transform="translate(400, 160)">
+    <circle cx="0" cy="0" r="45" fill="rgba(18, 24, 38, 0.8)" stroke="#7ef3c4" stroke-width="2"/>
+    <circle cx="0" cy="0" r="18" fill="#0c0e14" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M -45 0 L 45 0 M 0 -45 L 0 45" stroke="rgba(126, 243, 196, 0.3)" stroke-width="1"/>
+  </g>
+
+  <!-- Planet 2 (Bottom Left) -->
+  <g transform="translate(320, 300)">
+    <circle cx="0" cy="0" r="45" fill="rgba(18, 24, 38, 0.8)" stroke="#7ef3c4" stroke-width="2"/>
+    <circle cx="0" cy="0" r="18" fill="#0c0e14" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M -45 0 L 45 0 M 0 -45 L 0 45" stroke="rgba(126, 243, 196, 0.3)" stroke-width="1"/>
+  </g>
+
+  <!-- Planet 3 (Bottom Right) -->
+  <g transform="translate(480, 300)">
+    <circle cx="0" cy="0" r="45" fill="rgba(18, 24, 38, 0.8)" stroke="#7ef3c4" stroke-width="2"/>
+    <circle cx="0" cy="0" r="18" fill="#0c0e14" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M -45 0 L 45 0 M 0 -45 L 0 45" stroke="rgba(126, 243, 196, 0.3)" stroke-width="1"/>
+  </g>
+
+  <!-- Sun Gear (Center) -->
+  <circle cx="400" cy="250" r="40" fill="#0c0e14" stroke="url(#metalGrad)" stroke-width="3"/>
+  <circle cx="400" cy="250" r="15" fill="#7ef3c4" opacity="0.9"/>
+
+  <!-- Carrier Plate outline -->
+  <polygon points="400,160 480,300 320,300" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" stroke-dasharray="5 5"/>
+
+  <!-- Engineering CAD Annotation Callouts -->
+  <g font-family="monospace" font-size="12" fill="#7ef3c4">
+    <!-- Callout 1 -->
+    <path d="M 400 115 L 400 65 L 460 65" fill="none" stroke="#7ef3c4" stroke-width="1"/>
+    <circle cx="400" cy="115" r="3" fill="#7ef3c4"/>
+    <text x="470" y="69" fill="#94a3b8">PLANETARY MODULE m=2.5mm</text>
+    <text x="470" y="85" fill="#7ef3c4" font-weight="bold">RATIO 4.2:1 (EPICYCLIC)</text>
+
+    <!-- Callout 2 -->
+    <path d="M 275 300 L 210 300 L 150 340" fill="none" stroke="#38bdf8" stroke-width="1"/>
+    <circle cx="275" cy="300" r="3" fill="#38bdf8"/>
+    <text x="50" y="345" fill="#38bdf8">PRECISION ROLLER BEARING</text>
+    <text x="50" y="360" fill="#64748b">TOLERANCE: ISO H7/p6</text>
+
+    <!-- Callout 3 -->
+    <path d="M 400 250 L 520 380 L 580 380" fill="none" stroke="#7ef3c4" stroke-width="1"/>
+    <circle cx="400" cy="250" r="3" fill="#7ef3c4"/>
+    <text x="590" y="384" fill="#94a3b8">SUN INPUT SHAFT [17-4 PH SS]</text>
+    <text x="590" y="400" fill="#7ef3c4">MAX TORQUE: 180 N·m</text>
+  </g>
+
+  <!-- Watermark HUD info -->
+  <text x="30" y="460" font-family="monospace" font-size="11" fill="rgba(255,255,255,0.3)">CAD SCHEMATIC // SOLIDWORKS 2026 // PARASOLID X_T</text>
+  <text x="770" y="460" font-family="monospace" font-size="11" fill="rgba(126,243,196,0.5)" text-anchor="end">STATUS: VERIFIED GD&amp;T</text>
+</svg>
